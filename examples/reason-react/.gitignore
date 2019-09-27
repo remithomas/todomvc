@@ -1,0 +1,5 @@
+.bsb.lock
+lib
+.merlin
+.cache
+dist

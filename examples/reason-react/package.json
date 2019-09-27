@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "reasonml",
+  "version": "1.0.0",
+  "description": "## Learning Reasonml",
+  "main": "js/Index.bs.js",
+  "scripts": {
+    "start": "concurrently -c --kill-others 'npm:start:bsb' 'npm:start:parcel'",
+    "start:bsb": "bsb -make-world -w",
+    "start:parcel": "parcel index.html --open",
+    "clean": "bsb -clean-world",
+    "build": "npm run clean && bsb -make-world"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bs-platform": "^5.2.1",
+    "reason-react": "^0.7.0"
+  },
+  "dependencies": {
+    "@glennsl/bs-json": "^5.0.1",
+    "concurrently": "^4.1.2",
+    "director": "^1.2.8",
+    "parcel-bundler": "^1.12.4",
+    "re-classnames": "^4.0.0",
+    "react": "^16.9.0",
+    "todomvc-app-css": "^2.2.0",
+    "todomvc-common": "^1.0.5"
+  }
+}

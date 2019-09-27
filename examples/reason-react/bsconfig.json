@@ -1,0 +1,24 @@
+{
+  "name": "reason-todo",
+  "reason": {
+    "react-jsx": 3
+  },
+  "bsc-flags": ["-bs-super-errors"],
+  "bs-dependencies": [
+		"reason-react",
+		"@glennsl/bs-json",
+		"re-classnames"
+  ],
+  "sources": [
+    {
+      "dir": "js",
+      "subdirs": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "refmt": 3,
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  }
+}
